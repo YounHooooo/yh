@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "img": "https://www.auburn.co.kr/web/product/big/202306/a800d9a5a3127fcbdf6b16502a452ee7.jpg",
+      "title": "할리 산타마리아 티셔츠",
+      "price": 34500,
+      "choice": false,
+      "new": true,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 1,
+      "img": "https://www.auburn.co.kr/web/product/medium/202307/596f6f6f58314bc62de27bc8089b6dff.jpg",
+      "title": "할리 모터사이클 티셔츠",
+      "price": 34000,
+      "choice": false,
+      "new": false,
+      "soldout": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 2,
+      "img": "https://www.auburn.co.kr/web/product/small/202305/8976ebe9a8bff405f22eb35853a28526.jpg",
+      "title": "카모 썸머 니트 후드집업",
+      "price": 39000,
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 3,
+      "img": "https://www.auburn.co.kr/web/product/medium/202305/9d0ff513a303ee31eb339793ae4696c8.jpg",
+      "title": "월드 레터링 오버핏 티셔츠",
+      "price": 24000,
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 4,
+      "img": "https://www.auburn.co.kr/web/product/medium/202312/589470091cddba8f9610fc6baf5bef2f.jpg",
+      "title": "디스트로이드 컷팅 와이드 진",
+      "price": 59000,
+      "choice": false,
+      "new": true,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 5,
+      "img": "https://www.auburn.co.kr/web/product/medium/202312/441453549014a76f73b23ccc38727aac.jpg",
+      "title": "오일 워싱 와이드 진",
+      "price": 52000,
+      "choice": false,
+      "new": false,
+      "soldout": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 6,
+      "img": "https://www.auburn.co.kr/web/product/medium/202311/1d5bf213fb480023e1f36ceac6ed9f24.jpg",
+      "title": "삼선 나일론 벌룬 팬츠",
+      "price": 39000,
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 7,
+      "img": "https://www.auburn.co.kr/web/product/medium/202311/83b726806355c2161b04dfb3575d420b.jpg",
+      "title": "카이 도밍고 워시드 진",
+      "price": 24000,
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 8,
+      "img": "https://cdn3-aka.makeshop.co.kr/shopimages/jason006/0790060034303.jpg?1714010494",
+      "title": "스티치 카라 스트링 점퍼",
+      "price": "31000",
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 9,
+      "img": "https://cdn3-aka.makeshop.co.kr/shopimages/jason006/0790030042403.jpg?1714363238",
+      "title": "실버 버클 심플 벨트",
+      "price": "9000",
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 10,
+      "img": "https://cdn3-aka.makeshop.co.kr/shopimages/jason006/0790090016713.gif?1711605745",
+      "title": "펑키 자수 볼캡",
+      "price": "18500",
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 11,
+      "img": "https://cdn3-aka.makeshop.co.kr/shopimages/jason006/0790090016443.jpg?1715328334",
+      "title": "와이드 린넨 보넷 모자",
+      "price": "16700",
+      "choice": false,
+      "new": false,
+      "soldout": false,
+      "size": ["S", "M", "L"]
+    }
+  ]
+}
