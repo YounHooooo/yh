@@ -23,7 +23,7 @@
   list-style: none;
   padding-left: 0px;
   font-size: 16pt;
-  text-align: center; /*중앙정렬*/
+  text-align: center;
   padding: 20px 0 20px 0;
 }
 
@@ -129,7 +129,6 @@ footer {
   margin: 0.6rem;
 }
 
-/** 전체 페이지 **/
 .wrapper {
   height: 100vh;
 }
@@ -182,6 +181,7 @@ footer {
 }
 
 .size-button {
+  margin-top: 15px;
   margin-bottom: 15px;
   height: 150px;
 }

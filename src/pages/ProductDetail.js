@@ -6,40 +6,59 @@ import Footer from "../components/Footer";
 const ProductDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
+
   const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/YounHooooo/yh-data/products/${id}`;
+    let url = `http://my-json-server.typicode.com/YounHooooo/yh/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProduct(data);
   };
+
   useEffect(() => {
     getProductDetail();
-  }, []);
+  }, [id]);
+
   return (
     <div>
       <Container>
         <Row>
           <Col className="product-img-wrap">
-            <img className="product-img" src={product?.img} />
+            {product && (
+              <img
+                className="product-img"
+                src={product.img}
+                alt={product.title}
+              />
+            )}
           </Col>
           <Col>
-            <strong className="product-title">{product?.title}</strong>
-            <div className="product-price">{product?.price} 원</div>
-            <Dropdown className="size-button">
-              <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                사이즈 선택
-              </Dropdown.Toggle>
+            {product && (
+              <>
+                <strong className="product-title">{product.title}</strong>
+                <div className="product-price">{product.price} 원</div>
+                <div className="card-content-new">
+                  {product?.new == true ? "New" : ""}
+                </div>
 
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/size-S">S</Dropdown.Item>
-                <Dropdown.Item href="#/size-M">M</Dropdown.Item>
-                <Dropdown.Item href="#/size-L">L</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <div className="product-detail-button-wrap">
-              <button className="buy-button">바로 구매하기</button>
-              <button className="bag-button">장바구니 추가</button>
-            </div>
+                <Dropdown className="size-button">
+                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                    사이즈 선택
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    {product.size.map((size) => (
+                      <Dropdown.Item key={size} href={`#/size-${size}`}>
+                        {size}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+                <div className="product-detail-button-wrap">
+                  <button className="buy-button">바로 구매하기</button>
+                  <button className="bag-button">장바구니 추가</button>
+                </div>
+              </>
+            )}
           </Col>
         </Row>
       </Container>

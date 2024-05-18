@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 const Navbar = ({ authenticate, setAuthenticate }) => {
@@ -27,6 +27,9 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
       let keyword = event.target.value;
       navigate(`/?q=${keyword}`);
     }
+  };
+  const handleCategoryClick = (category) => {
+    navigate(`/?category=${category}`);
   };
 
   return (
@@ -61,8 +64,13 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
           <div className="menu-area">
             <ul className="menu-list">
               {menuList.map((menu) => (
-                <li className="menu" key={menu}>
-                  <a href={menu}>{menu}</a>
+                // <li className="menu" key={menu}>
+                <li
+                  className="menu"
+                  key={menu}
+                  onClick={() => handleCategoryClick(menu)}
+                >
+                  <Link to={`/category/${menu}`}>{menu}</Link>
                 </li>
               ))}
             </ul>

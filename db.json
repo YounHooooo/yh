@@ -8,7 +8,8 @@
       "choice": false,
       "new": true,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 1,
@@ -18,7 +19,8 @@
       "choice": false,
       "new": false,
       "soldout": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Best"
     },
     {
       "id": 2,
@@ -28,7 +30,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 3,
@@ -38,7 +41,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 4,
@@ -48,7 +52,8 @@
       "choice": false,
       "new": true,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 5,
@@ -58,7 +63,8 @@
       "choice": false,
       "new": false,
       "soldout": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 6,
@@ -68,7 +74,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 7,
@@ -78,7 +85,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Men"
     },
     {
       "id": 8,
@@ -88,7 +96,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Women"
     },
     {
       "id": 9,
@@ -98,7 +107,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Acc"
     },
     {
       "id": 10,
@@ -108,7 +118,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Acc"
     },
     {
       "id": 11,
@@ -118,7 +129,8 @@
       "choice": false,
       "new": false,
       "soldout": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "category": "Acc"
     }
   ]
 }
