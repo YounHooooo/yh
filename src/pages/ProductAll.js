@@ -7,13 +7,12 @@ import { useSearchParams } from "react-router-dom";
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
-  // test
+
   const getProducts = async () => {
     let searchQuery = query.get("q") || "";
     let categoryQuery = query.get("category") || "";
-    let url = `http://my-json-server.typicode.com/YounHooooo/yh/products`;
+    let url = `https://my-json-server.typicode.com/YounHooooo/yh/products`;
 
-    // URL 생성 로직
     if (searchQuery && categoryQuery) {
       url += `?q=${searchQuery}&category=${categoryQuery}`;
     } else if (searchQuery) {
