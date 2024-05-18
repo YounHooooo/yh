@@ -6,17 +6,30 @@ import Footer from "../components/Footer";
 const ProductDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [error, setError] = useState(null);
 
   const getProductDetail = async () => {
-    let url = `http://my-json-server.typicode.com/YounHooooo/yh/products/${id}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    setProduct(data);
+    let url = `https://my-json-server.typicode.com/YounHooooo/yh/products/${id}`;
+    try {
+      let response = await fetch(url);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      let data = await response.json();
+      setProduct(data);
+    } catch (error) {
+      console.error("Fetch error:", error);
+      setError(error);
+    }
   };
 
   useEffect(() => {
     getProductDetail();
   }, [id]);
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
     <div>
@@ -37,7 +50,7 @@ const ProductDetail = () => {
                 <strong className="product-title">{product.title}</strong>
                 <div className="product-price">{product.price} 원</div>
                 <div className="card-content-new">
-                  {product?.new == true ? "New" : ""}
+                  {product.new ? "New" : ""}
                 </div>
 
                 <Dropdown className="size-button">
