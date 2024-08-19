@@ -10,6 +10,7 @@ const ProductDetail = () => {
 
   const getProductDetail = async () => {
     let url = `https://my-json-server.typicode.com/YounHooooo/yh/products/${id}`;
+    
     try {
       let response = await fetch(url);
       if (!response.ok) {
